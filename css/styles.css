@@ -2,6 +2,7 @@ body {
   font-family: "Roboto", sans-serif;
   color: #434455;
   background-color: #fff;
+  width: 320px;
 }
 
 a {
@@ -18,6 +19,7 @@ button {
 
 img {
   display: block;
+  max-width: 100%;
 }
 
 h1,
@@ -36,13 +38,14 @@ ul {
 }
 
 .container {
-  max-width: 1158px;
+  max-width: 320px;
   margin: 0 auto;
   padding: 0 15px;
 }
 
 .page-header .container {
-  width: 1158px;
+  width: 320px;
+  height: 56px;
   margin: 0 auto;
   display: flex;
   flex-direction: row;
@@ -50,12 +53,19 @@ ul {
 }
 
 .page-header {
+  width: 320px;
+  height: 56px;
+  margin: 0 auto;
   display: flex;
   flex-direction: row;
   border-bottom: 1px solid #e7e9fc;
   background: #fff;
   box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
+}
+
+.header-hidden {
+  visibility: hidden;
 }
 
 .logo {
@@ -141,8 +151,9 @@ ul {
 
 .main-page {
   background-color: #2e2f42;
-  padding-top: 188px;
-  padding-bottom: 188px;
+  width: 320px;
+  padding-top: 72px;
+  padding-bottom: 72px;
   background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
@@ -151,7 +162,7 @@ ul {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  max-width: 1440px;
+  max-width: 320px;
   margin: 0 auto;
 }
 
@@ -195,11 +206,10 @@ ul {
 }
 
 .advantages {
-  padding: 120px 0;
+  padding: 96px 16px;
 }
 
 .advantages .list-item {
-  width: calc((100% - 72px) / 4);
 }
 
 .secondary-title {
@@ -226,7 +236,18 @@ ul {
 }
 
 .advantages .third-title {
+  color: #2e2f42;
+  text-align: center;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
   margin-bottom: 8px;
+}
+
+.adv-icons-container {
+  visibility: hidden;
 }
 
 .team .secondary-title {
@@ -235,16 +256,19 @@ ul {
 
 .container .adv-list {
   display: flex;
-  gap: 24px;
+  flex-direction: column;
+  gap: 72px;
 }
 
 .container .team-lst {
   display: flex;
-  gap: 24px;
+  flex-wrap: wrap;
+  gap: 72px;
 }
 
 .team {
-  padding: 120px 0;
+  padding: 96px 28px;
+  background-color: #f4f4fd;
 }
 
 .team .third-title {
@@ -278,9 +302,11 @@ ul {
 }
 
 .advantages-description {
+  color: #434455;
   font-size: 16px;
-  line-height: 24px;
-  letter-spacing: 0.32px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
 }
 
 .third-title {
@@ -292,7 +318,7 @@ ul {
 }
 
 .portfolio {
-  padding: 120px 0;
+  padding: 96px 16px;
 }
 
 .portfolio .secondary-title {
@@ -302,7 +328,7 @@ ul {
 .container .portfolio-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 24px;
+  gap: 48px;
   row-gap: 48px;
 }
 
@@ -316,12 +342,9 @@ ul {
   margin-bottom: 8px;
 }
 
-.team {
-  background-color: #f4f4fd;
-}
-
 .page-footer {
   background-color: #2e2f42;
+  padding: 100px 0;
 }
 
 .logo-footer {
@@ -351,14 +374,7 @@ ul {
   font-size: 16px;
   line-height: 24px;
   letter-spacing: 0.32px;
-}
-
-.page-footer {
-  padding: 100px 0;
-}
-
-.container .footer-text {
-  width: 264px;
+  width: 288px;
 }
 
 .portfolio-item:hover {
@@ -422,7 +438,7 @@ ul {
 
 .page-footer .container {
   display: flex;
-  align-items: baseline;
+  flex-direction: column;
 }
 
 .footer-first-part {
@@ -527,10 +543,6 @@ ul {
 .page-footer .worker-sm-link:hover,
 .page-footer .worker-sm-link:focus {
   background-color: #31d0aa;
-}
-
-.footer-third-part {
-  margin-left: 80px;
 }
 
 .footer-form-p {
