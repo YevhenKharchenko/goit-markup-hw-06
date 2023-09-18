@@ -835,6 +835,119 @@ textarea {
 
 /* ==================== Modal ==================== */
 
+/* ==================== Context menu ==================== */
+
+.context-menu-container {
+  width: 320px;
+  padding: 72px 24px 40px 16px;
+  position: relative;
+  visibility: hidden;
+}
+
+.context-menu-close-btn {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #e7e9fc;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 0;
+  cursor: pointer;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.context-menu-nav-list {
+  margin-bottom: 168px;
+}
+
+.context-menu-nav-list-items-studio {
+  color: #404bbf;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+}
+
+.context-menu-nav-list-items {
+  color: #2e2f42;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+}
+
+.context-menu-nav-list-page {
+  margin-bottom: 40px;
+}
+
+.context-menu-tel {
+  color: #4d5ae5;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 0.05em;
+}
+
+.context-menu-mail {
+  color: #434455;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 0.05em;
+}
+
+.context-menu-contacts-item {
+  margin-bottom: 24px;
+}
+
+.context-menu-contacts {
+  margin-bottom: 48px;
+}
+
+.context-menu-icons-list {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  align-items: center;
+}
+
+.context-menu-icons-list-item {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #4d5ae5;
+}
+
+.context-menu-sm-link {
+  width: 100%;
+  height: 100%;
+  background-color: #4d5ae5;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.context-menu-sm-icons {
+  width: 24px;
+  height: 24px;
+  fill: #f4f4fd;
+  position: absolute;
+}
+
+/* ==================== Context menu ==================== */
+
 /* ==================== Tablet ==================== */
 
 @media (min-width: 768px) {
