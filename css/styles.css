@@ -67,7 +67,6 @@ ul {
   display: flex;
   flex-direction: row;
   align-items: center;
-  margin-right: auto;
 }
 
 .open-menu-btn {
@@ -177,13 +176,14 @@ ul {
 .main-title {
   color: #fff;
   text-align: center;
-  font-size: 56px;
+  font-size: 36px;
   font-weight: 700;
-  line-height: 1.07;
-  letter-spacing: 1.12px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
   margin: 0 auto;
-  max-width: 288px;
-  margin-bottom: 48px;
+  max-width: 208px;
+  width: 208px;
+  margin-bottom: 72px;
 }
 
 .main-btn {
@@ -618,6 +618,7 @@ ul {
   letter-spacing: 0.04em;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   color: #fff;
+  opacity: 0.3;
 }
 
 .footer-form-input::placeholder {
@@ -990,6 +991,8 @@ textarea {
 
   .container {
     max-width: 768px;
+    padding-left: 16px;
+    padding-right: 16px;
   }
 
   .page-header {
@@ -1000,10 +1003,20 @@ textarea {
   .page-header .container {
     display: flex;
     justify-content: space-between;
+    margin: 0 auto;
+    width: 768px;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .logo {
+    padding-top: 26px;
+    padding-bottom: 26px;
   }
 
   .navigation {
     display: flex;
+    margin-right: 122px;
   }
 
   .nav-list {
@@ -1011,8 +1024,37 @@ textarea {
     visibility: visible;
     margin-left: 120px;
   }
+
+  .nav-list-items {
+    padding: 0;
+  }
+
+  .nav-list-items-studio {
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+
+  .nav-list-items-studio::after {
+  }
+
   .contacts {
+    display: flex;
     visibility: visible;
+    align-items: center;
+  }
+
+  .tel-mail {
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+    padding: 0;
+  }
+
+  .container .contacts-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 12px;
   }
 
   .open-menu-btn {
@@ -1024,7 +1066,19 @@ textarea {
   }
 
   .main-page {
+    width: 768px;
     max-width: 768px;
+    margin: 0 auto;
+    padding-top: 112px;
+    padding-bottom: 112px;
+  }
+
+  .main-title {
+    max-width: 496px;
+    width: 496px;
+    margin-bottom: 36px;
+    font-size: 56px;
+    line-height: 1.07;
   }
 
   .advantages {
@@ -1033,15 +1087,82 @@ textarea {
     padding-bottom: 96px;
   }
 
-  .adv-list {
+  .container .adv-list {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 24px;
+    gap: 72px 24px;
+  }
+
+  .adv-list .list-item {
+    width: 356px;
+  }
+
+  .team .container {
+    padding-left: 92px;
+    padding-right: 92px;
   }
 
   .team {
     padding-top: 96px;
     padding-bottom: 108;
+  }
+
+  .team .team-lst {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 64px 24px;
+  }
+
+  .portfolio {
+    width: 768px;
+  }
+
+  .container .portfolio-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 72px 24px;
+  }
+
+  .portfolio-item {
+    width: 356px;
+  }
+
+  .page-footer .container {
+    padding-left: 92px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .logo-footer {
+    text-align: left;
+  }
+
+  .footer-form {
+    flex-direction: row;
+    gap: 24px;
+  }
+
+  .footer-form-p {
+    text-align: left;
+    margin-right: auto;
+    margin-top: 0;
+    margin-bottom: 16px;
+    margin-left: 0;
+  }
+
+  .footer-form-label {
+    width: 264px;
+  }
+
+  .footer-form-input {
+    width: 264px;
+  }
+
+  .modal {
+    width: 408px;
+    min-height: 584px;
   }
 }
