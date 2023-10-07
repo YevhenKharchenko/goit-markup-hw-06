@@ -869,6 +869,7 @@ ul {
 
 .modal-link {
   color: #4d5ae5;
+  text-decoration: underline;
 }
 
 input,
