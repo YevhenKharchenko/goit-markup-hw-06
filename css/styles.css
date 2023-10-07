@@ -858,6 +858,7 @@ ul {
   align-items: center;
   justify-content: center;
   fill: transparent;
+  flex-shrink: 0;
 }
 
 .checkbox {
