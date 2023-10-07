@@ -1051,25 +1051,27 @@ textarea {
   .page-header .container {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     margin: 0 auto;
     padding-left: 16px;
     padding-right: 16px;
   }
 
   .logo {
-    padding-top: 26px;
-    padding-bottom: 26px;
+    padding-top: 24px;
+    padding-bottom: 24px;
     margin-right: 0;
   }
 
   .navigation {
     display: flex;
+    align-items: center;
     margin-right: 122px;
   }
 
   .nav-list {
     display: flex;
-    visibility: visible;
+    align-items: center;
     margin-left: 120px;
   }
 
@@ -1085,7 +1087,6 @@ textarea {
 
   .contacts {
     display: flex;
-    visibility: visible;
     align-items: center;
   }
 
@@ -1249,14 +1250,15 @@ textarea {
     width: 1158px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     margin: 0 auto;
     padding-left: 16px;
     padding-right: 16px;
   }
 
   .logo {
-    padding-top: 26px;
-    padding-bottom: 26px;
+    padding-top: 24px;
+    padding-bottom: 24px;
   }
 
   .navigation {
