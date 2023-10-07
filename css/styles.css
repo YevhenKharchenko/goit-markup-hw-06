@@ -1074,7 +1074,8 @@ textarea {
   }
 
   .nav-list-items {
-    padding: 0;
+    padding-top: 24px;
+    padding-bottom: 24px;
   }
 
   .nav-list-items-studio {
@@ -1270,7 +1271,8 @@ textarea {
   }
 
   .nav-list-items {
-    padding: 0;
+    padding-top: 24px;
+    padding-bottom: 24px;
   }
 
   .nav-list-items-studio {
