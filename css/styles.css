@@ -492,8 +492,11 @@ ul {
 }
 
 .portfolio-img {
-  width: 288px;
-  height: 280px;
+  display: none;
+}
+
+.portfolio-img-m {
+  display: block;
 }
 
 .overlay-text {
@@ -1187,8 +1190,11 @@ textarea {
   }
 
   .portfolio-img {
-    width: 356px;
-    height: 300px;
+    display: block;
+  }
+
+  .portfolio-img-m {
+    display: none;
   }
 
   .page-footer .container {
@@ -1402,8 +1408,11 @@ textarea {
   }
 
   .portfolio-img {
-    width: 360px;
-    height: 300px;
+    display: block;
+  }
+
+  .portfolio-img-m {
+    display: none;
   }
 
   .item-descr {
